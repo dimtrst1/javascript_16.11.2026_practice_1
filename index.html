@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Диалоговые окна</h1>
+    <script>
+        let name, male, age, email;
+        do {
+            name = prompt("ФИО:", "Введите ваше имя");
+            male = prompt("Пол:", "Введите ваш пол");
+            age = parseInt(prompt("Возраст", "Введите ваш возраст"));
+            email = prompt("E-mail:", "Введите ваш email");
+            
+            
+        }
+        while (!confirm("Все верно?"));
+        alert("ФИО: " + name + "\n" +
+              "Пол: " + male + "\n" +
+              "Возраст: " + age + "\n" +
+              "E-mail: " + email
+        );
+    </script>
+</body>
+</html>
